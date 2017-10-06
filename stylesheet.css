@@ -1,3 +1,17 @@
+@media screen and (max-width:500px) {
+  .top {
+  justify-content: space-around;
+  flex-shrink: 3;
+  }
+}
+
+@media screen and (min-width:500px) and (max-width:900px) {
+  .top {
+    justify-content: space-around;
+    flex-shrink: 2;
+  }
+}
+
 body {
     height: 100%;
     margin: 0px;  /*removes default style*/
@@ -15,24 +29,16 @@ ul {
   height: 100%;
   display: flex;
   flex-direction: row;
-  order=3;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
 }
 
 .top {
   width : 100%;
   display: flex;
   flex-direction: row;  /*places the left and right headers above the bottom content*/
-  text-align: right;
-  padding-left: 25px;
-  padding-right: 25px;
-  padding-top: 25px;
-  padding-bottom: 2px;
-  margin-left: 10px;
-  margin-right: 10px;
-  margin-top: 10px;
-  margin-bottom: 2px;
-  order= 1;
-  justify-content: space-around;
+  justify-content: space-between;
 }
 
 .title {
@@ -51,6 +57,7 @@ ul {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  padding: 5px;
 }
 
 h3 {
